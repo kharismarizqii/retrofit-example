@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.kharismarizqii.retrofitexercise.R
+import kotlinx.android.synthetic.main.fragment_settings.*
 
 /**
  * A simple [Fragment] subclass.
@@ -21,4 +22,12 @@ class SettingsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_settings, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        et_email
+    }
+
+    private fun updateProfile(){
+        
+    }
 }
