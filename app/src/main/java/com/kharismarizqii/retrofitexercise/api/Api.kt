@@ -43,4 +43,9 @@ interface Api {
         @Field("newpassword") newpassword: String,
         @Field("email") email: String
     ): Call<DefaultResponse>
+
+    @DELETE("deleteuser/{id}")
+    fun deleteUser(
+        @Path("id") id: Int?
+    ): Call<DefaultResponse>
 }
